@@ -1,0 +1,13 @@
+{
+  "profiles": {
+    "CompUIFileTree": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\kjr43\\OneDrive\\문서\\Visual Studio 2022\\Projects\\MVVMBoilerPlate\\MainWindow\\bin\\Debug\\net7.0-windows\\MainWindow.exe",
+      "remoteDebugEnabled": false
+    },
+    "프로필 1": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Users\\kjr43\\OneDrive\\문서\\Visual Studio 2022\\Projects\\MVVMBoilerPlate\\MainWindow\\bin\\Debug\\net7.0-windows\\MainWindow.exe"
+    }
+  }
+}
