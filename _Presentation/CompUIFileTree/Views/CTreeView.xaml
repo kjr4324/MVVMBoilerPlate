@@ -1,21 +1,24 @@
-<UserControl x:Class="CompUIFileTree.Views.CListView"
+<UserControl x:Class="CompUIFileTree.Views.CUITreeView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:data="clr-namespace:CompUIFileTree.ViewModels" 
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="300">
+             d:DesignHeight="400" d:DesignWidth="300">
     <UserControl.DataContext>
-        <data:CListViewModel/>
+        <data:CTreeViewModel/>
     </UserControl.DataContext>
     <Grid>
         
         <StackPanel>
-            <TextBlock Text="{Binding Message}"/>
-            <Button Content="Click Me" Command="{Binding BtnClickCommand}"/>
-            <TextBlock Text="{Binding Message2}"/>
-            <Button Content="Click Me" Command="{Binding Btn2ClickCommand}"/>
+            <!--<TextBlock Text="{Binding Message}"/>-->
+            <Button Content="Set Root" Command="{Binding BtnClickCommand}"/>
+            <!--<TextBlock Text="{Binding Message2}"/>-->
+            <!--<Button Content="Click Me" Command="{Binding Btn2ClickCommand}"/>-->
+            <TreeView ItemsSource="{Binding RootItems}">
+                
+            </TreeView>
         </StackPanel>
     </Grid>
 </UserControl>
